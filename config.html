@@ -1,0 +1,596 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>config.toml说明 · goInception使用文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="韩川川">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-atom-dark.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="demo.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"user":"hanchuanchuan","repo":"goInception","type":"star","size":"small","buttons":[{"user":"hanchuanchuan","repo":"goInception","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="params.html">
+            
+                <a href="params.html">
+            
+                    
+                    调用选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="demo.html">
+            
+                <a href="demo.html">
+            
+                    
+                    使用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    config.toml说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="options.html">
+            
+                <a href="options.html">
+            
+                    
+                    审核选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="rules.html">
+            
+                <a href="rules.html">
+            
+                    
+                    审核规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="backup.html">
+            
+                <a href="backup.html">
+            
+                    
+                    备份功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="osc.html">
+            
+                <a href="osc.html">
+            
+                    
+                    DDL变更:pt-osc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="ghost.html">
+            
+                <a href="ghost.html">
+            
+                    
+                    DDL变更:gh-ost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="kill_stmt.html">
+            
+                <a href="kill_stmt.html">
+            
+                    
+                    KILL操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="levels.html">
+            
+                <a href="levels.html">
+            
+                    
+                    自定义审核级别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="statistics.html">
+            
+                <a href="statistics.html">
+            
+                    
+                    统计功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="tree.html">
+            
+                <a href="tree.html">
+            
+                    
+                    语法树打印
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="support.html">
+            
+                <a href="support.html">
+            
+                    
+                    赞助&定制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="changelog.html">
+            
+                <a href="changelog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >config.toml说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#host"><b>1.1.1. </b>host</a></li><li><span class="title-icon "></span><a href="#port"><b>1.1.2. </b>port</a></li><li><span class="title-icon "></span><a href="#path"><b>1.1.3. </b>path</a></li><li><span class="title-icon "></span><a href="#inc"><b>1.1.4. </b>[inc]</a></li><li><span class="title-icon "></span><a href="#osc"><b>1.1.5. </b>[osc]</a></li><li><span class="title-icon "></span><a href="#gh-ost"><b>1.1.6. </b>[gh-ost]</a></li><li><span class="title-icon "></span><a href="#log"><b>1.1.7. </b>[log]</a></li><li><span class="title-icon "></span><a href="#logfile"><b>1.1.8. </b>[log.file]</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h4 id="configtoml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><a name="configtoml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#configtoml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>config.toml&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BF4;&#x660E;</h4>
+<p>goInception&#x901A;&#x8FC7;<code>./goInception -config=config/config.toml</code>&#x65B9;&#x5F0F;&#x542F;&#x52A8;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x8BF4;&#x660E;config.toml&#x4E2D;&#x7684;&#x5404;&#x9879;&#x914D;&#x7F6E;&#x3002;</p>
+<p><strong>&#x7531;&#x4E8E;goInception&#x91C7;&#x7528;TiDB&#x6E90;&#x7801;&#x91CD;&#x6784;&#xFF0C;&#x6240;&#x4EE5;&#x90E8;&#x5206;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x8003;TiDB&#x76F8;&#x5173;&#x6587;&#x6863;</strong></p>
+<p><code>config.toml</code>&#x6587;&#x4EF6;&#x7531;&#x51E0;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x6700;&#x5916;&#x5C42;&#x914D;&#x7F6E;&#x5982;<code>host</code>,<code>port</code>&#x7B49;&#xFF0C;&#x4EE5;&#x53CA;&#x5404;&#x5206;&#x7EC4;&#x5982;<code>[inc]</code>,<code>[log]</code>&#x7B49;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x9010;&#x4E00;&#x8BF4;&#x660E;&#x3002;</p>
+<p>&#x793A;&#x4F8B;(&#x8BE5;&#x793A;&#x4F8B;&#x4EC5;&#x4E3A;&#x5C55;&#x793A;config.toml&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#xFF0C;<a href="https://github.com/hanchuanchuan/goInception/blob/master/config/config.toml.default" target="_blank">&#x8BE6;&#x7EC6;&#x53C2;&#x6570;&#x8BF7;&#x53C2;&#x8003;</a>)&#xFF1A;</p>
+<pre class="language-"><code class="lang-toml">
+<span class="token key property">host</span> <span class="token punctuation">=</span> <span class="token string">&quot;0.0.0.0&quot;</span>
+<span class="token key property">port</span> <span class="token punctuation">=</span> <span class="token number">4000</span>
+<span class="token key property">path</span> <span class="token punctuation">=</span> <span class="token string">&quot;/tmp/tidb&quot;</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">log</span><span class="token punctuation">]</span>
+<span class="token comment"># &#x65E5;&#x5FD7;&#x53C2;&#x6570;</span>
+<span class="token key property">level</span> <span class="token punctuation">=</span> <span class="token string">&quot;info&quot;</span>
+<span class="token key property">format</span> <span class="token punctuation">=</span> <span class="token string">&quot;text&quot;</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">log.file</span><span class="token punctuation">]</span>
+<span class="token comment"># &#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x53C2;&#x6570;</span>
+<span class="token key property">filename</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+<span class="token key property">max-size</span> <span class="token punctuation">=</span> <span class="token number">300</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">inc</span><span class="token punctuation">]</span>
+<span class="token comment"># &#x5BA1;&#x6838;&#x9009;&#x9879;</span>
+<span class="token key property">enable_nullable</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+<span class="token key property">enable_drop_table</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+<span class="token key property">check_table_comment</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+<span class="token key property">check_column_comment</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+<span class="token comment"># &#x7B49;&#x7B49;...</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">osc</span><span class="token punctuation">]</span>
+<span class="token comment"># pt-osc&#x53C2;&#x6570;</span>
+<span class="token key property">osc_on</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+<span class="token key property">osc_min_table_size</span> <span class="token punctuation">=</span> <span class="token number">16</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">ghost</span><span class="token punctuation">]</span>
+<span class="token comment"># gh-ost&#x53C2;&#x6570;</span>
+<span class="token key property">ghost_allow_on_master</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+</code></pre>
+<h3 id="host"><a name="host" class="anchor-navigation-ex-anchor" href="#host"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. host</h3>
+<p>&#x7ED1;&#x5B9A;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>0.0.0.0</code></p>
+<h3 id="port"><a name="port" class="anchor-navigation-ex-anchor" href="#port"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. port</h3>
+<p>&#x7ED1;&#x5B9A;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>4000</code></p>
+<h3 id="path"><a name="path" class="anchor-navigation-ex-anchor" href="#path"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. path</h3>
+<p>TiDB&#x6570;&#x636E;&#x5E93;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>/tmp/tidb</code>&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x4F1A;&#x521B;&#x5EFA;&#x5C11;&#x91CF;TiDB&#x7684;&#x7CFB;&#x7EDF;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x7A7A;&#x65F6;&#xFF0C;&#x5219;&#x4F1A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x521B;&#x5EFA;&#x3002;
+&#x5EFA;&#x8BAE;&#x6307;&#x5B9A;&#x5B9E;&#x9645;&#x76EE;&#x5F55;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x52A0;&#x5FEB;&#x542F;&#x52A8;&#x7684;&#x901F;&#x5EA6;&#x3002;</p>
+<h3 id="inc"><a name="inc" class="anchor-navigation-ex-anchor" href="#inc"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. [inc]</h3>
+<p>&#x6240;&#x6709;&#x7684; <strong><a href="../options">&#x5BA1;&#x6838;&#x9009;&#x9879;</a></strong> &#x5728;&#x6B64;&#x5904;&#x8BBE;&#x7F6E;</p>
+<h3 id="osc"><a name="osc" class="anchor-navigation-ex-anchor" href="#osc"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. [osc]</h3>
+<p>&#x6240;&#x6709;&#x7684; <strong><a href="../osc">pt-osc&#x9009;&#x9879;</a></strong> &#x5728;&#x6B64;&#x5904;&#x8BBE;&#x7F6E;</p>
+<h3 id="gh-ost"><a name="gh-ost" class="anchor-navigation-ex-anchor" href="#gh-ost"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. [gh-ost]</h3>
+<p>&#x6240;&#x6709;&#x7684; <strong><a href="../ghost">gh-ost&#x9009;&#x9879;</a></strong> &#x5728;&#x6B64;&#x5904;&#x8BBE;&#x7F6E;</p>
+<h3 id="log"><a name="log" class="anchor-navigation-ex-anchor" href="#log"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.7. [log]</h3>
+<h5 id="level"><a name="level" class="anchor-navigation-ex-anchor" href="#level"><i class="fa fa-link" aria-hidden="true"></i></a>level</h5>
+<p>&#x65E5;&#x5FD7;&#x7EA7;&#x522B;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>info</code>
+&#x53EF;&#x9009;&#x503C;&#xFF1A; <code>debug</code>, <code>info</code>, <code>warn</code>, <code>error</code>.</p>
+<h5 id="format"><a name="format" class="anchor-navigation-ex-anchor" href="#format"><i class="fa fa-link" aria-hidden="true"></i></a>format</h5>
+<p>&#x65E5;&#x5FD7;&#x683C;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>text</code>
+&#x53EF;&#x9009;&#x503C;&#xFF1A; <code>json</code>, <code>text</code>, <code>console</code></p>
+<h5 id="disable-timestamp"><a name="disable-timestamp" class="anchor-navigation-ex-anchor" href="#disable-timestamp"><i class="fa fa-link" aria-hidden="true"></i></a>disable-timestamp</h5>
+<p>&#x7981;&#x7528;&#x65F6;&#x95F4;&#x6233;&#x8F93;&#x51FA;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>false</code></p>
+<h3 id="logfile"><a name="logfile" class="anchor-navigation-ex-anchor" href="#logfile"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.8. [log.file]</h3>
+<h5 id="filename"><a name="filename" class="anchor-navigation-ex-anchor" href="#filename"><i class="fa fa-link" aria-hidden="true"></i></a>filename</h5>
+<p>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>&quot;&quot;</code>
+&#x5EFA;&#x8BAE;&#x6307;&#x5B9A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x4FBF;&#x4E8E;&#x95EE;&#x9898;&#x8FFD;&#x6EAF;</p>
+<h5 id="max-size"><a name="max-size" class="anchor-navigation-ex-anchor" href="#max-size"><i class="fa fa-link" aria-hidden="true"></i></a>max-size</h5>
+<p>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x7684;&#x6700;&#x5927;&#x4E0A;&#x9650;(MB)&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>300</code></p>
+<h5 id="max-days"><a name="max-days" class="anchor-navigation-ex-anchor" href="#max-days"><i class="fa fa-link" aria-hidden="true"></i></a>max-days</h5>
+<p>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x7684;&#x4FDD;&#x5B58;&#x5929;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>0</code>&#xFF0C;&#x5373;&#x4E0D;&#x6E05;&#x7406;</p>
+<h5 id="max-backups"><a name="max-backups" class="anchor-navigation-ex-anchor" href="#max-backups"><i class="fa fa-link" aria-hidden="true"></i></a>max-backups</h5>
+<p>&#x8981;&#x4FDD;&#x7559;&#x7684;&#x6700;&#x5927;&#x65E7;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>0</code>&#xFF0C;&#x5373;&#x4E0D;&#x6E05;&#x7406;</p>
+<h5 id="log-rotate"><a name="log-rotate" class="anchor-navigation-ex-anchor" href="#log-rotate"><i class="fa fa-link" aria-hidden="true"></i></a>log-rotate</h5>
+<p>&#x65E5;&#x5FD7;&#x8F6E;&#x8BE2;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C; <code>true</code>&#xFF0C;&#x5373;&#x5F00;&#x542F;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; hanchuanchuan 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-12-18 11:32:02
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="demo.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 使用示例">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"config.toml说明","level":"1.2.4","depth":2,"next":{"title":"配置","level":"1.3","depth":1,"ref":"","articles":[{"title":"审核选项","level":"1.3.1","depth":2,"path":"options.md","ref":"options.md","articles":[]},{"title":"审核规则","level":"1.3.2","depth":2,"path":"rules.md","ref":"rules.md","articles":[]},{"title":"备份功能","level":"1.3.3","depth":2,"path":"backup.md","ref":"backup.md","articles":[]}]},"previous":{"title":"使用示例","level":"1.2.3","depth":2,"path":"demo.md","ref":"demo.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-highlight","-search","-sharing","anchor-navigation-ex","copy-code-button","donate","edit-link","github","github-buttons","prism","prism-themes","search-plus","sharing-plus","splitter","tbfed-pagefooter","theme-comscore","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy hanchuanchuan 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-atom-dark.css"]},"github":{"url":"https://github.com/hanchuanchuan/"},"livereload":{},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"donate":{"title":"","button":"赞助","wechat":"https://hanchuanchuan.github.io/goInception/images/wechat.jpeg","alipay":"https://hanchuanchuan.github.io/goInception/images/pay.jpeg","wechatText":" ","alipayText":" "},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"theme-comscore":{},"prism-themes":{},"github-buttons":{"user":"hanchuanchuan","repo":"goInception","type":"star","size":"small","buttons":[{"user":"hanchuanchuan","repo":"goInception","type":"star","size":"small","count":true}]},"copy-code-button":{},"sharing":{"qq":false,"all":["google","facebook","twitter","qq","linkedin","douban"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"edit-link":{"label":"编辑本页","base":"https://github.com/hanchuanchuan/inc-docs/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"韩川川","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"goInception使用文档","language":"zh-hans","gitbook":"3.2.3","description":"一个集审核、执行、备份及生成回滚语句于一身的MySQL运维工具","theme-default":{"showLevel":true}},"file":{"path":"config.md","mtime":"2019-12-18T03:32:02.547Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-18T09:09:49.246Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
