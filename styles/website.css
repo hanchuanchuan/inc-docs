@@ -1,3 +1,7 @@
 .gitbook-link {
     display: none !important;
 }
+
+.markdown-section table{
+    display: block;
+}
