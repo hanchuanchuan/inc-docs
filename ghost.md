@@ -113,7 +113,7 @@ ghost_discard_foreign_keys             | false  | bool | 该参数针对一个�
 ghost_dml_batch_size                   | 10     | int | 在单个事务中应用DML事件的批量大小（范围1-100）（默认值为10）
 ghost_exact_rowcount                   | false  | bool | 准确统计表行数(使用select count(*)的方式)，得到更准确的预估时间。
 ghost_exponential_backoff_max_interval | 64     | int |  Maximum number of seconds to wait between attempts when performing various operations with exponential backoff. (default 64)
-ghost_force_named_cut_over             | false  | bool | When true, the ‘unpostpone|cut-over’ interactive command must name the migrated table。
+ghost_force_named_cut_over             | false  | bool | When true, the ‘unpostpone &#124; cut-over’ interactive command must name the migrated table。
 ghost_force_table_names                |        | string | table name prefix to be used on the temporary tables
 ghost_gcp                              | false  | bool | google云平台支持
 ghost_heartbeat_interval_millis        | 500    | int | gh-ost心跳频率值，默认为500。

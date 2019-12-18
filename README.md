@@ -24,7 +24,7 @@ inception_magic_commit;
 
 **致谢**
 
-```text
+```
 goInception基于TiDB的语法解析器，和业内有名的inception审核工具重构。
 ```
 

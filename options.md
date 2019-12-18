@@ -71,7 +71,7 @@ enable_select_star   |  false    |   true,false     |     Select*时是不是要
 enable_set_charset   |  false    |   true,false     |     是否允许指定表和数据库的字符集
 enable_set_collation `v0.7` |  false    |   true,false     |     是否允许指定表和数据库的排序规则
 enable_set_engine  `v1.0-rc4`  |  true    |   true,false     |     是否允许指定存储引擎,默认为`true`
-enable_sql_statistic `v0.9` |  false    |   true,false     |     开启统计功能. 详见 **[统计功能](../statistics)**
+enable_sql_statistic `v0.9` |  false    |   true,false     |     开启统计功能. 详见 **[统计功能](../statistics.html)**
 enable_timestamp_type `v1.0.1` |  true    |   true,false     |    设置是否允许 `timestamp` 类型字段，包括建表、修改列、新增列操作，默认为 `true`
 enable_zero_date `v1.0.1` |  true    |   true,false     |    设置是否支持时间为0值，关闭时强制报错。默认值为 `true`，即开启，此时会基于数据库sql_mode的NO_ZERO_DATE判断是否支持
 general_log `v0.8.1` |  false    |   true,false     |     是否记录全量日志
