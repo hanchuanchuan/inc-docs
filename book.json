@@ -35,7 +35,7 @@
     },
     "prism": {
       "css": [
-        "prismjs/themes/prism-atom-dark.css"
+        "prism-themes/themes/prism-atom-dark.css"
       ]
     },
      "github-buttons": {
