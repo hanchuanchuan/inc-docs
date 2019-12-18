@@ -25,12 +25,15 @@
 对于ALTER TABLE操作，因为这个操作包含很多的子操作，比如rename、drop index、engine innodb等操作，所以对于列altertable，它的值是renaming, createindex, dropindex, addcolumn, dropcolumn, changecolumn, alteroption, alterconvert的和, 而后面的是对ALTER TABLE语句的细分操作统计。
 
 那么如果现在想要统计某一个操作，比如修改表占所有操作的百分比，则使用如下语句即可完成：
-````
-select sum(a.oprate)/count(1) updaterate from
-(select (updating)/(usedb+deleting+inserting+updating+selecting+altertable+
-createtable+droptable+createdb+truncating) oprate from
-inception.statistic) a;
-````
+```sql
+SELECT Sum(a.oprate) / Count(1) updaterate
+FROM   (SELECT ( updating ) / ( usedb + deleting + inserting + updating +
+                                selecting
+                                + altertable + createtable + droptable +
+                                createdb
+                                + truncating ) oprate
+        FROM   inception.statistic) a;
+```
 
 # 说明
 

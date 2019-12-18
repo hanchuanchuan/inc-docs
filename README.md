@@ -8,7 +8,7 @@ goInception是一个集审核、执行、备份及生成回滚语句于一身的
 
 **架构**
 
-![&#x5BA1;&#x6838;&#x6D41;&#x7A0B;](.gitbook/assets/image.png)
+![审核流程](./images/process.png)
 
 **使用方式**
 

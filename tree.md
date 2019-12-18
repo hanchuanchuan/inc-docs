@@ -13,24 +13,26 @@
 ##示例
 
 SQL语句：
-````
-insert into t (sno,name)
-        select sno, name from t alias_t
-        where sno=(
-                select sno+1 from my
-                where
-                name like "%zhufeng%" and
-                sno > '10010' and
-                name=alias_t.name
-        )
-        order by name
-        limit 100, 10;
-````
+```sql
+INSERT INTO t
+            (sno,
+             name)
+SELECT sno,
+       name
+FROM   t alias_t
+WHERE  sno = (SELECT sno + 1
+              FROM   my
+              WHERE  name LIKE "%zhufeng%"
+                     AND sno > '10010'
+                     AND name = alias_t.name)
+ORDER  BY name
+LIMIT  100, 10;
+```
 
 
 返回的结果对应的Json可视化的query_tree如下：
 
-````
+```json
 {
   "text": "insert into t (sno,name)\n        select sno, name from t alias_t\n        where sno=(\n                select sno+1 from my\n                where\n                name like \"%zhufeng%\" and\n                sno > '10010' and\n                name=alias_t.name\n        )\n        order by name\n        limit 100, 10",
   "IsReplace": false,
@@ -865,7 +867,7 @@ insert into t (sno,name)
     "IsInBraces": false
   }
 }
-````
+```
 <!--
 上面的SQL语句实际上没有任何意义，这里只是为了尽可能好的将每一类型的表达式打印出来而胡乱构造的。
 

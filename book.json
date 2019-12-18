@@ -7,16 +7,23 @@
  "theme-default": {
       "showLevel": true
   },
-  "structure": {
-    "readme": "README.md"
+  "styles": {
+      "website": "styles/website.css"
   },
   "plugins": [
+      "-lunr",
       "-highlight",
+      "-search",
       "-sharing",
+      "anchor-navigation-ex",
+      "copy-code-button",
       "donate",
+      "edit-link",
       "github",
       "github-buttons",
       "prism",
+      "prism-themes",
+      "search-plus",
       "sharing-plus",
       "splitter",
       "tbfed-pagefooter",
@@ -26,27 +33,35 @@
     "github": {
       "url": "https://github.com/hanchuanchuan/"
     },
-    "books": {
-    "prism_themes": [
-      "prismjs/themes/prism-okaidia.css"
-    ]
-  },
+    "prism": {
+      "css": [
+        "prismjs/themes/prism-atom-dark.css"
+      ]
+    },
      "github-buttons": {
-            "repo": "hanchuanchuan/goInception",
-            "types": [
-                "star",
-                "watch",
-                "fork"
-            ],
-            "size": "small"
+          "user":"hanchuanchuan",
+          "repo": "goInception",
+          "type":"star",
+          "size": "small",
+          "buttons": [{
+            "user":"hanchuanchuan",
+            "repo": "goInception",
+            "type": "star",
+            "size": "small",
+            "count": true
+          }]
+      },
+        "edit-link": {
+            "base": "https://github.com/hanchuanchuan/inc-docs/blob/master",
+            "label": "编辑本页"
         },
     "donate": {
         "wechat": "https://hanchuanchuan.github.io/goInception/images/wechat.jpeg",
         "alipay": "https://hanchuanchuan.github.io/goInception/images/pay.jpeg",
         "title": "",
         "button": "赞助",
-        "alipayText": "支付宝赞助",
-        "wechatText": "微信赞助"
+        "alipayText": " ",
+        "wechatText": " "
     },
     "tbfed-pagefooter": {
         "copyright":"Copyright &copy hanchuanchuan 2020",
@@ -72,21 +87,12 @@
       "weibo": false,
       "whatsapp": false,
       "all": [
-        "google", "facebook", "weibo", "twitter",
-        "qq", "qzone", "linkedin", "pocket"
+        "google", "facebook",  "twitter",
+        "qq", "linkedin","douban"
       ]
     },
     "anchor-navigation-ex": {
       "showLevel": true
-    },
-    "favicon": {
-      "shortcut": "./source/images/favicon.jpg",
-      "bookmark": "./source/images/favicon.jpg",
-      "appleTouch": "./source/images/apple-touch-icon.jpg",
-      "appleTouchMore": {
-        "120x120": "./source/images/apple-touch-icon.jpg",
-        "180x180": "./source/images/apple-touch-icon.jpg"
-      }
     }
   }
 }

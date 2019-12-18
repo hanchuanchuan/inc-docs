@@ -26,28 +26,28 @@ inception_magic_commit;
 - 在备份服务器上，备份库的命名格式为：```IP_PORT_库名```，例如```127_0_0_1_3306_test```
 - 在备份库上创建备份信息表```$_$Inception_backup_information$_$```，用来保存该库的执行信息和回滚语句信息
 
-    | 字段名             | 类型         | 说明
-    --------------------|--------------|------
-    opid_time         | varchar(50)  | 执行操作ID,格式为```时间戳_线程号_执行序号```
-    start_binlog_file | varchar(512) | 起始binlog文件
-    start_binlog_pos  | int(11)      | 起始binlog位置
-    end_binlog_file   | varchar(512) | 终止binlog文件
-    end_binlog_pos    | int(11)      | 终止binlog位置
-    sql_statement     | text         | 执行SQL
-    host              | varchar(64)  | 执行IP地址
-    dbname            | varchar(64)  | 执行库名
-    tablename         | varchar(64)  | 执行表名
-    port              | int(11)      | 执行端口
-    time              | timestamp    | 执行时间
-    type              | varchar(20)  | 操作类型
+字段名             | 类型         | 说明
+--------------------|--------------|------
+opid_time         | varchar(50)  | 执行操作ID,格式为```时间戳_线程号_执行序号```
+start_binlog_file | varchar(512) | 起始binlog文件
+start_binlog_pos  | int(11)      | 起始binlog位置
+end_binlog_file   | varchar(512) | 终止binlog文件
+end_binlog_pos    | int(11)      | 终止binlog位置
+sql_statement     | text         | 执行SQL
+host              | varchar(64)  | 执行IP地址
+dbname            | varchar(64)  | 执行库名
+tablename         | varchar(64)  | 执行表名
+port              | int(11)      | 执行端口
+time              | timestamp    | 执行时间
+type              | varchar(20)  | 操作类型
 
 - 在备份库有和操作表相同的表名，其表结构统一为：
 
-    字段名  |  类型  | 说明
-    ------------ | ------------- | ------------
-    id   |  bigint     |   自增主键
-    rollback_statement   |  mediumtext    |  回滚语句
-    opid_time   |  varchar(50)    | 关联执行操作ID
+字段名  |  类型  | 说明
+------------ | ------------- | ------------
+id   |  bigint     |   自增主键
+rollback_statement   |  mediumtext    |  回滚语句
+opid_time   |  varchar(50)    | 关联执行操作ID
 
 #### 备份功能详细步骤
 
