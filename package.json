@@ -24,7 +24,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gitbook install && gitbook build",
+    "build": "gitbook install && gitbook build"
   },
   "repository": {
     "type": "git",
