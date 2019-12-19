@@ -26,7 +26,7 @@
       "search-plus",
       "sharing-plus",
       "splitter",
-      "tbfed-pagefooter",
+      "page-footer-ex",
       "ace",
       "theme-comscore"
    ],
@@ -70,6 +70,12 @@
          "copyright":"Copyright &copy hanchuanchuan 2020",
          "modify_format":"YYYY-MM-DD HH:mm:ss"
       },
+      "page-footer-ex": {
+         "copyright": "Copyright © 2019 [hanchuanchuan](https://github.com/hanchuanchuan), all rights reserved",
+         "markdown": true,
+         "update_label": "Modify:",
+         "update_format": "YYYY-MM-DD HH:mm:ss"
+     },
       "sharing":{
          "douban":false,
          "facebook":false,
