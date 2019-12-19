@@ -1,0 +1,31 @@
+
+language: node_js
+
+node_js:
+  - lts/*
+
+cache:
+  directories:
+    - node_modules #缓存依赖
+
+branchs:
+  only:
+  - master
+
+install:
+  - yarn add gitbook-cli
+  - yarn install # npm ci
+
+script:
+  - yarn build # npm run docs:build
+
+deploy:
+  provider: pages
+  skip_cleanup: true # 防止Travis CI重置工作目录
+  github_token: $GITHUB_TOKEN # 在 GitHub 中生成，用于允许 Travis 向你的仓库推送代码。在 Travis 的项目设置页面进行配置，设置为 secure variable
+  keep_history: true # 可选，创建增量提交
+  local_dir: _book
+  repo: hanchuanchuan/goInception
+  target_branch: gh-pages
+  on:
+    branch: master
