@@ -5,3 +5,7 @@
 .markdown-section table{
     display: block;
 }
+
+.aceCode {
+  font-size: 14px !important;
+}

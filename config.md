@@ -57,15 +57,15 @@ TiDB数据库目录，默认值 `/tmp/tidb`，该参数会创建少量TiDB的系
 
 ### [inc]
 
-所有的 **[审核选项](../options.html)** 在此处设置
+所有的 **[审核选项](options.html)** 在此处设置
 
 ### [osc]
 
-所有的 **[pt-osc选项](../osc.html)** 在此处设置
+所有的 **[pt-osc选项](osc.html)** 在此处设置
 
 ### [gh-ost]
 
-所有的 **[gh-ost选项](../ghost.html)** 在此处设置
+所有的 **[gh-ost选项](ghost.html)** 在此处设置
 
 
 
