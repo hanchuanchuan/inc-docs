@@ -4,6 +4,8 @@
    "description":"一个集审核、执行、备份及生成回滚语句于一身的MySQL运维工具",
    "language":"zh-hans",
    "gitbook":"3.2.3",
+   "extension": "",
+    "generator": "site",
    "theme-default":{
       "showLevel":true
    },
