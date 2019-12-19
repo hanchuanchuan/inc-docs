@@ -1,16 +1,16 @@
 {
-  "title": "goInception使用文档",
-  "author": "韩川川",
-  "description": "一个集审核、执行、备份及生成回滚语句于一身的MySQL运维工具",
-  "language": "zh-hans",
-  "gitbook": "3.2.3",
- "theme-default": {
-      "showLevel": true
-  },
-  "styles": {
-      "website": "styles/website.css"
-  },
-  "plugins": [
+   "title":"goInception使用文档",
+   "author":"韩川川",
+   "description":"一个集审核、执行、备份及生成回滚语句于一身的MySQL运维工具",
+   "language":"zh-hans",
+   "gitbook":"3.2.3",
+   "theme-default":{
+      "showLevel":true
+   },
+   "styles":{
+      "website":"styles/website.css"
+   },
+   "plugins":[
       "-lunr",
       "-highlight",
       "-search",
@@ -29,74 +29,86 @@
       "tbfed-pagefooter",
       "ace",
       "theme-comscore"
-  ],
-  "pluginsConfig": {
-    "github": {
-      "url": "https://github.com/hanchuanchuan/"
-    },
-    "prism": {
-      "css": [
-        "prism-themes/themes/prism-atom-dark.css"
-      ]
-    },
-     "github-buttons": {
-          "user":"hanchuanchuan",
-          "repo": "goInception",
-          "type":"star",
-          "size": "small",
-          "buttons": [{
-            "user":"hanchuanchuan",
-            "repo": "goInception",
-            "type": "star",
-            "size": "small",
-            "count": true
-          }]
+   ],
+   "pluginsConfig":{
+      "github":{
+         "url":"https://github.com/hanchuanchuan/"
       },
-        "edit-link": {
-            "base": "https://github.com/hanchuanchuan/inc-docs/blob/master",
-            "label": "编辑本页"
-        },
-    "donate": {
-        "wechat": "https://hanchuanchuan.github.io/goInception/images/wechat.jpeg",
-        "alipay": "https://hanchuanchuan.github.io/goInception/images/pay.jpeg",
-        "title": "",
-        "button": "赞助",
-        "alipayText": " ",
-        "wechatText": " "
-    },
-    "tbfed-pagefooter": {
-        "copyright":"Copyright &copy hanchuanchuan 2020",
-        "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "sharing": {
-      "douban": false,
-      "facebook": false,
-      "google": false,
-      "hatenaBookmark": false,
-      "instapaper": false,
-      "line": false,
-      "linkedin": false,
-      "messenger": false,
-      "pocket": false,
-      "qq": false,
-      "qzone": false,
-      "stumbleupon": false,
-      "twitter": false,
-      "viber": false,
-      "vk": false,
-      "weibo": false,
-      "whatsapp": false,
-      "all": [
-        "google", "facebook",  "twitter",
-        "qq", "linkedin","douban"
-      ]
-    },
-    "anchor-navigation-ex": {
-      "showLevel": true,
-      "isShowTocTitleIcon": true,
-      "tocLevel1Icon": "fa fa-hand-o-right",
-      "tocLevel2Icon": "fa fa-hand-o-right",
-      "tocLevel3Icon": "fa fa-hand-o-right"
-    }
-  }
+      "prism":{
+         "css":[
+            "prism-themes/themes/prism-atom-dark.css"
+         ]
+      },
+      "github-buttons":{
+         "user":"hanchuanchuan",
+         "repo":"goInception",
+         "type":"star",
+         "size":"small",
+         "buttons":[
+            {
+               "user":"hanchuanchuan",
+               "repo":"goInception",
+               "type":"star",
+               "size":"small",
+               "count":true
+            }
+         ]
+      },
+      "edit-link":{
+         "base":"https://github.com/hanchuanchuan/inc-docs/blob/master",
+         "label":"编辑本页"
+      },
+      "donate":{
+         "wechat":"https://hanchuanchuan.github.io/goInception/images/wechat.jpeg",
+         "alipay":"https://hanchuanchuan.github.io/goInception/images/pay.jpeg",
+         "title":"",
+         "button":"赞助",
+         "alipayText":" ",
+         "wechatText":" "
+      },
+      "tbfed-pagefooter":{
+         "copyright":"Copyright &copy hanchuanchuan 2020",
+         "modify_format":"YYYY-MM-DD HH:mm:ss"
+      },
+      "sharing":{
+         "douban":false,
+         "facebook":false,
+         "google":false,
+         "hatenaBookmark":false,
+         "instapaper":false,
+         "line":false,
+         "linkedin":false,
+         "messenger":false,
+         "pocket":false,
+         "qq":false,
+         "qzone":false,
+         "stumbleupon":false,
+         "twitter":false,
+         "viber":false,
+         "vk":false,
+         "weibo":false,
+         "whatsapp":false,
+         "all":[
+            "google",
+            "facebook",
+            "twitter",
+            "qq",
+            "linkedin",
+            "douban"
+         ]
+      },
+      "anchor-navigation-ex":{
+         "showLevel":true,
+         "isShowTocTitleIcon":true,
+         "associatedWithSummary":true,
+         "multipleH1":true,
+         "showGoTop":true,
+         "float":{
+            "showLevelIcon":true
+         },
+         "pageTop":{
+            "showLevelIcon":true
+         }
+      }
+   }
 }

@@ -1,5 +1,6 @@
+# 备份功能
 
-#### 备份功能说明
+## 备份功能说明
 
 goInception自带备份功能，首先服务启动时配置config.toml(放在 `[inc]` 段)
 
@@ -21,7 +22,7 @@ inception_magic_commit;
 ```
 
 
-#### 备份功能写入规则
+## 备份功能写入规则
 
 - 在备份服务器上，备份库的命名格式为：```IP_PORT_库名```，例如```127_0_0_1_3306_test```
 - 在备份库上创建备份信息表```$_$Inception_backup_information$_$```，用来保存该库的执行信息和回滚语句信息
@@ -49,7 +50,7 @@ id   |  bigint     |   自增主键
 rollback_statement   |  mediumtext    |  回滚语句
 opid_time   |  varchar(50)    | 关联执行操作ID
 
-#### 备份功能详细步骤
+## 备份功能详细步骤
 
 1. 配置备份数据库，并在执行SQl时开启备份功能
 2. 在执行SQL前记录binlog位置和线程号(逐条执行逐条记录)

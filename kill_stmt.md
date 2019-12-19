@@ -1,5 +1,4 @@
-
-### KILL操作
+# KILL操作
 
 **使用前请连接goInception并使用`inception show processlist`确认当前阶段(`STATE`)**
 

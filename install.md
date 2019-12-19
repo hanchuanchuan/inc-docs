@@ -1,12 +1,13 @@
 
+# 安装
 
-### 二进制安装
+## 二进制安装
 
 
 [goInception安装包](https://github.com/hanchuanchuan/goInception/releases)
 
 
-### 源码安装
+## 源码安装
 
 - *go版本v1.12及以上*
 
@@ -26,7 +27,7 @@ go build -o goInception tidb-server/main.go
 
 ```
 
-#### 启动(注意指定配置文件)
+## 启动(注意指定配置文件)
 
 ```sh
 ./goInception -config=config/config.toml

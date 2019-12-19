@@ -1,5 +1,6 @@
+# config.toml
 
-#### config.toml配置文件说明
+## config.toml配置文件说明
 
 goInception通过`./goInception -config=config/config.toml`方式启动，接下来说明config.toml中的各项配置。
 
@@ -71,32 +72,32 @@ TiDB数据库目录，默认值 `/tmp/tidb`，该参数会创建少量TiDB的系
 
 ### [log]
 
-##### level
+#### level
 日志级别，默认值 `info`
 可选值： `debug`, `info`, `warn`, `error`.
 
-##### format
+#### format
 日志格式，默认值 `text`
 可选值： `json`, `text`, `console`
 
-##### disable-timestamp
+#### disable-timestamp
 禁用时间戳输出，默认值 `false`
 
 
 ### [log.file]
-##### filename
+#### filename
 日志文件，默认值 `""`
 建议指定日志文件，便于问题追溯
 
-##### max-size
+#### max-size
 日志文件的最大上限(MB)，默认值 `300`
 
-##### max-days
+#### max-days
 日志文件的保存天数，默认值 `0`，即不清理
 
-##### max-backups
+#### max-backups
 要保留的最大旧日志文件数，默认值 `0`，即不清理
 
-##### log-rotate
+#### log-rotate
 日志轮询，默认值 `true`，即开启
 
