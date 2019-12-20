@@ -45,6 +45,11 @@ order_id |  stage  | error_level |   stage_status   |         error_message     
 3     | CHECKED |    2     | Audit Completed | Column 't1.c2' not existed. |   insert into t1(id,c1,c2) values(1,1,1)   |       1       | 0_0_00000002 |      None     |      0       |   None |      0
 
 
+### 结果集说明
+
+详见 [结果集说明](result.html)
+
+
 ### 系统变量
 
 连接

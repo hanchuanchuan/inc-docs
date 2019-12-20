@@ -15,6 +15,7 @@
    "plugins":[
       "-lunr",
       "-highlight",
+      "fontsettings",
       "-search",
       "-sharing",
       "anchor-navigation-ex",

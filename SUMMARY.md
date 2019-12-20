@@ -5,6 +5,7 @@
     * [安装](install.md)
     * [调用选项](params.md)
     * [使用示例](demo.md)
+    * [结果集说明](result.md)
     * [config.toml说明](config.md)
 
 * 配置

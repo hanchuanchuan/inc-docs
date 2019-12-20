@@ -11,7 +11,15 @@ backup_port   |  0    |   int     |     备份数据库端口
 backup_user   |  ""    |   string     |   备份数据库用户名
 backup_password   |  ""    |   string    |   备份数据库密码
 
-并且在执行sql时，添加```--backup=true```选项
+并且在执行sql时，添加 ```--backup=true``` 或 ```--backup=1``` 选项
+
+
+## 备份功能权限要求
+
+* 对`远程数据库`要求具有：`REPLICATION CLIENT`,`REPLICATION CLIENT`, 以进行binlog解析
+* 对`备份数据库`要求具有：`CREATE`,`INSERT`,建议给所有权限, 便于生成备份
+
+### 示例
 
 ```sql
 /*--user=root;--password=root;--host=127.0.0.1;--port=3306;--execute=1;--backup=1;*/
