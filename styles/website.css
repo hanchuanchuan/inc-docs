@@ -21,3 +21,45 @@
 .markdown-section p>code,.markdown-section table tr td code{
     color: red;
 }
+
+.text-success{
+    font-weight: bold;
+    font-size: 22px;
+    color: #28a745!important;
+}
+
+
+.text-success-small{
+    font-weight: bold;
+    color: #28a745!important;
+}
+
+.text-error{
+    font-weight: bold;
+    font-size: 22px;
+    color: #dc3545!important;
+}
+
+.progress{
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    position: relative;
+    border:1px solid #ddd;
+    border-radius: 10px;
+}
+
+.rect{
+    height: 30px;
+    position: absolute;
+    top:0;
+    color: #007bff!important;
+    border-radius: 10px;
+    overflow: hidden; /*注意这里*/
+}
+.left{
+    left:0;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #007bff!important;
+    height: 28px;
+}
