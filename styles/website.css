@@ -63,3 +63,10 @@
     background-color: #007bff!important;
     height: 28px;
 }
+
+/*.left::after {
+    display: block;
+    content: ' ';
+    width: 100px;
+    height: 200px;
+}*/
