@@ -7,6 +7,7 @@
     * [使用示例](demo.md)
     * [结果集说明](result.md)
     * [config.toml说明](config.md)
+    * [权限说明](permission.md)
 
 * 配置
     * [审核选项](options.md)
