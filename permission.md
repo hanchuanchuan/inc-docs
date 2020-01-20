@@ -20,7 +20,7 @@
 ## 执行
 
 * 实际的SQL执行权限
-* `SUPER权限`，用以binlog格式不为row时执行`set session binlog_format='row'`
+
 
 ### 使用pt-osc
 
@@ -38,8 +38,12 @@
 
 ### 远端数据库
 
+* `SUPER权限`，用以binlog格式不为row时执行`set session binlog_format='row'`
+
 * `SUPER|REPLICATION CLIENT, REPLICATION SLAVE` binlog解析
 
 ### 备份库
+
+
 
 * `建议授予备份库实例的所有权限`
