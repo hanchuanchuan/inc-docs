@@ -11,7 +11,7 @@
 
 ### New Features
 * 添加会话级变量设置 (#157, #166, #167)
-* 添加osc参数`max-flow-ctl`,以便PXC集群启用pt-osc功能 (#170, #172)
+* 添加osc参数`osc_max_flow_ctl`,以便PXC集群启用pt-osc功能 (#170, #172)
 * 添加审核项`columns_must_have_index`, 指定列必须添加索引 (#174, #175)
 
 ### Update

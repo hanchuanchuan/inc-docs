@@ -82,6 +82,7 @@ osc_critical_thread_connected                 | 1000           | int | 对应参
 osc_critical_thread_running                   | 80             | int | 对应参数--critical-load中的thread_running部分
 osc_drop_new_table                     | true           | bool | 对应参数--[no]drop-new-table
 osc_drop_old_table                     | true           | bool | 对应参数--[no]drop-old-table
+osc_max_flow_ctl `v1.2.2`              | -1           | int | 对应参数--max-flow-ctl. 检查集群暂停流量控制所花费的平均时间 (仅适用于PXC 5.6及以上版本,版本自动判断). -1表示不开启. 非PXC集群会自动忽略该参数
 osc_max_lag                            | 3              | int | 对应参数--max-lag
 osc_max_thread_connected                      | 1000           | int | 对应参数--max-load中的thread_connected部分
 osc_max_thread_running                        | 80             | int | 对应参数--max-load中的thread_running部分

@@ -1,5 +1,46 @@
 # 审核选项
 
+### 使用说明
+
+以下参数均通过mysql客户端连接,通过命令行形式方式调用goinception(类似MySQL服务)
+
+### 重要说明(V1.2.2更新)
+
+从`V1.2.2`版本开始，支持在SQL语句内部动态设置审核选项，实现会话级变量设置！
+([相关issue](https://github.com/hanchuanchuan/goInception/issues/166))
+
+示例：
+```sql
+/*--user=xxx;--password=xxx;--host=127.0.0.1;--port=3306;--check=1;*/
+inception_magic_start;
+use test;
+
+drop table if exists t1,t2;
+
+inception set check_table_comment = 1;
+
+create table t1(id int primary key);
+
+inception set check_table_comment = 0;
+
+create table t2(id int primary key);
+
+inception_magic_commit;
+```
+
+审核结果(隐藏了部分列)：
+注意，`inception set` 的行并不返回！除非set失败报错。
+
+order_id |  stage  | error_level |   stage_status   |         error_message        |                    sql
+-----|------|------|-----------|--------------|----------------------------
+1     | CHECKED |      0      | Audit Completed |          None         |             use test_inc
+2     | CHECKED |      0      | Audit Completed |          None         |      drop table if exists t1,t2
+3     | CHECKED |      1      | Audit Completed | 表 't1' 需要设置注释. | create table t1(id int primary key)values(1,1,1)
+4     | CHECKED |      0      | Audit Completed |          None         | create table t2(id int primary key)
+
+
+
+
 ### 支持参数
 
 
@@ -46,6 +87,7 @@ check_primary_key   |  false    |   true,false     |  建表时，如果没有�
 check_table_comment   |  false    |   true,false     |    建表时，表没有注释时报错
 check_timestamp_count `v0.6.0`   |  false    |   true,false     |    配置是否检查current_timestamp数量
 check_timestamp_default   |  false    |   true,false     |    建表时，如果没有为timestamp类型指定默认值，则报错
+columns_must_have_index `v1.2.2`   | ""    |   string  | 指定的列必须添加索引。多个列时以逗号分隔(`格式: 列名 [列类型,可选]`),指定列类型时对类型也会限制.
 default_charset `v1.0.5` | "utf8mb4"    |   string  | 设置连接数据库的默认字符集,默认值为`utf8mb4` (解决低版本不支持utf8mb4的问题)
 enable_autoincrement_unsigned   |  false    |   true,false     |  自增列是不是要为无符号型
 enable_blob_not_null `v1.0` |  false    |   true,false     |   是否允许blob/text/json类型置为`not null`,默认为`false`,即不允许
