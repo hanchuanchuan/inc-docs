@@ -1,6 +1,20 @@
 # goInception 更新日志
 
 
+## [v1.2.3] - 2020-05-22
+
+### Fix
+* fix: 修复pt-osc在获取表锁卡住时无法kill的问题 (#213, #222)
+
+### New Features
+* 添加参数`ignore_sighup`,默认忽略终端连接断开信号 (#195)
+* 添加`osc_lock_wait_timeout`参数, 控制pt-osc等待meta lock时间，默认60s (#214, #215)
+* 支持多个自定义索引前缀 (#204)
+
+### Update
+* 完善MySQL5.7关键字列表 (#210)
+
+
 ## [v1.2.2] - 2020-04-04
 
 ### Fix
