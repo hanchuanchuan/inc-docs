@@ -115,11 +115,14 @@ enable_set_collation `v0.7` |  false    |   true,false     |     是否允许指
 enable_set_engine  `v1.0-rc4`  |  true    |   true,false     |     是否允许指定存储引擎,默认为`true`
 enable_sql_statistic `v0.9` |  false    |   true,false     |     开启统计功能. 详见 **[统计功能](statistics.html)**
 enable_timestamp_type `v1.0.1` |  true    |   true,false     |    设置是否允许 `timestamp` 类型字段，包括建表、修改列、新增列操作，默认为 `true`
+enable_use_view `v1.2.4` | false    |   true,false  | 支持创建和使用视图
 enable_zero_date `v1.0.1` |  true    |   true,false     |    设置是否支持时间为0值，关闭时强制报错。默认值为 `true`，即开启，此时会基于数据库sql_mode的NO_ZERO_DATE判断是否支持
 general_log `v0.8.1` |  false    |   true,false     |     是否记录全量日志
 hex_blob `v1.1.4` |  false    |   true,false     |     在解析binlog时,二进制类型如果无法以字符串形式保存,则以十六进制字符串转储(影响类型:binary,varbinary,blob),默认关闭
+ignore_osc_alter_stmt `v1.2.4` | ""    |   string  | 配置要强制忽略osc的alter子句. 格式为drop index,add column等,多个时以逗号分隔
 lang `v0.5.1` | en-US             | en-US,zh-CN | 返回的信息使用语言,可选值`en-US`,`zh-CN`
-max_allowed_packet    `v1.0-rc3`            | 4194304              | int | 允许的最大数据包大小.默认为 `4194304`,单位字节,即4MB
+lock_wait_timeout `v1.2.4` | -1             | int | 会话在执行SQL时的元数据锁等待超时,单位:秒
+max_allowed_packet    `v1.0-rc3`            | 4194304     | int | 允许的最大数据包大小.默认为 `4194304`,单位字节,即4MB
 max_char_length                | 0              | int | 最大char长度,当超出时警告转换为varchar类型
 max_ddl_affect_rows `v1.0.2`   | 0              | int | 当DDL预估受影响行数超出设置值时警告,为0时不限制
 max_insert_rows   `v0.6.3`              | 0           | int  | 设置insert values允许的最大行数.0为不限制

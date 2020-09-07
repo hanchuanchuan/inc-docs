@@ -89,5 +89,6 @@ osc_max_thread_running                        | 80             | int | 对应参
 osc_min_table_size                     | 16             | int | OSC的开关，如果设置为0，则全部ALTER语句都走OSC，如果设置为非0，则当这个表占用空间大小大于这个值时才使用OSC方式。单位为M，这个表大小的计算方式是通过语句： select (DATA_LENGTH + INDEX_LENGTH)/1024/1024 from information_schema.tables where table_schema = "dbname" and table_name = "tablename"来实现的。
 osc_print_none                         | false          | bool | 用来设置在Inception返回结果集中，对于原来OSC在执行过程的标准输出信息是不是要打印到结果集对应的错误信息列中，如果设置为1，就不打印，如果设置为0，就打印。而如果出现错误了，则都会打印
 osc_print_sql                          | false          | bool | 对应参数--print
+osc_sleep `v1.2.4` | 0.0          | float | 对应参数--sleep
 osc_recursion_method                   | processlist    | string | 对应参数recursion_method
 
