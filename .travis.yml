@@ -2,7 +2,8 @@
 language: node_js
 
 node_js:
-  - lts/*
+  # - lts/*
+  - 12.13
 
 cache:
   directories:
