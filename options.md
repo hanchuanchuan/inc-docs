@@ -90,6 +90,7 @@ check_timestamp_default   |  false    |   true,false     |    建表时，如果
 columns_must_have_index `v1.2.2`   | ""    |   string  | 指定的列必须添加索引。多个列时以逗号分隔(`格式: 列名 [列类型,可选]`),指定列类型时对类型也会限制.
 default_charset `v1.0.5` | "utf8mb4"    |   string  | 设置连接数据库的默认字符集,默认值为`utf8mb4` (解决低版本不支持utf8mb4的问题)
 enable_autoincrement_unsigned   |  false    |   true,false     |  自增列是不是要为无符号型
+enable_any_statement `v1.2.5`  |  false    |   true,false     |  是否允许所有语法(仍受其他开关影响,如删表等).[详细说明见PR](https://github.com/hanchuanchuan/goInception/pull/301)
 enable_blob_not_null `v1.0` |  false    |   true,false     |   是否允许blob/text/json类型置为`not null`,默认为`false`,即不允许
 enable_blob_type   |  false    |   true,false     |   检查是不是支持BLOB字段，包括建表、修改列、新增列操作
 enable_change_column `v1.0.3` |  true    |   true,false     |   设置是否支持change column语法,默认值`true`
@@ -147,3 +148,5 @@ wait_timeout `v1.1.2` | 0      | int | 远端数据库等待超时时间, 单位
 <!--
 inception_read_only     设置当前Inception服务器是不是只读的，这是为了防止一些人具有修改权限的帐号时，通过Inception误修改一些数据，如果inception_read_only设置为ON，则即使开了enable-execute，同时又有执行权限，也不会去执行，审核完成即返回
  -->
+
+
