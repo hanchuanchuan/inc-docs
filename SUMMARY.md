@@ -22,6 +22,7 @@
     * [统计功能](statistics.md)
     * [语法树打印](tree.md)
     * [事务](trans.md)
+    * [用户管理/鉴权](safe.md)
     * [对比inception](diff.md)
 
 * [赞助&定制](support.md)

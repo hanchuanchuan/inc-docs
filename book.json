@@ -70,11 +70,11 @@
          "wechatText":" "
       },
       "tbfed-pagefooter":{
-         "copyright":"Copyright &copy hanchuanchuan 2020",
+         "copyright":"Copyright &copy hanchuanchuan 2021",
          "modify_format":"YYYY-MM-DD HH:mm:ss"
       },
       "page-footer-ex": {
-         "copyright": "Copyright © 2020 [hanchuanchuan](https://github.com/hanchuanchuan), all rights reserved",
+         "copyright": "Copyright © 2021 [hanchuanchuan](https://github.com/hanchuanchuan), all rights reserved",
          "markdown": true,
          "update_label": "Modify:",
          "update_format": "YYYY-MM-DD HH:mm:ss"
